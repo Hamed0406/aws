@@ -40,7 +40,7 @@ sudo echo  >  /etc/nginx/sites-enabled/hamedadeli.me "server {
 
        location / {
 
-               try_files $uri $uri/ =404;
+               try_files $[uri] $[uri]/ =404;
 
        }
 
