@@ -23,9 +23,9 @@ sudo echo   >  /var/www/html/hamedadeli.me/index.html "
 </html>"
 
   # create  index.html 
- sudo touch /etc/nginx/sites-available/hamedadeli.me
+ sudo touch /etc/nginx/sites-enabled/hamedadeli.me
 
-sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
+sudo echo  >  /etc/nginx/sites-enabled/hamedadeli.me "server {
 
        listen 8080;
 
@@ -46,7 +46,7 @@ sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
 }"
 
-sudo ln -s /etc/nginx/sites-available/hamedadeli.me  /etc/nginx/sites-enabled/hamedadeli.me
+ # sudo ln -s /etc/nginx/sites-available/hamedadeli.me  /etc/nginx/sites-enabled/hamedadeli.me
 # create  config  for  static website 
 
 sudo systemctl enable nginx.service   #enbale enginx 
