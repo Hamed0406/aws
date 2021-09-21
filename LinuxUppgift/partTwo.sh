@@ -38,7 +38,7 @@ echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
 
 
 
-       root /var/www/html/mywebsite-nginx;
+       root /var/www/html/mywebsite-nginx/;
 
        index index.html;
 
