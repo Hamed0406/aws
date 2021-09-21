@@ -35,7 +35,7 @@ sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
        index index.html;
 
-       server_name hamedadeli.com www.hamedadeli.me;
+       server_name hamedadeli.me www.hamedadeli.me;
 
 
        location / {
@@ -46,7 +46,7 @@ sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
 }"
 
-sudo ln -s /etc/nginx/sites-available/hamedadeli.com  /etc/nginx/sites-enabled/hamedadeli.com
+sudo ln -s /etc/nginx/sites-available/hamedadeli.me  /etc/nginx/sites-enabled/hamedadeli.me
 # create  config  for  static website 
 
 sudo systemctl enable nginx.service   #enbale enginx 
