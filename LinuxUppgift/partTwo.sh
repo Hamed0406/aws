@@ -31,7 +31,7 @@ sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
        listen [::]:8080;
 
-       root /var/www/html/mywebsite-nginx;
+       root /var/www/html/hamedadeli.me;
 
        index index.html;
 
