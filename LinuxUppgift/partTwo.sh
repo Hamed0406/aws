@@ -27,9 +27,9 @@ sudo echo   >  /var/www/html/hamedadeli.me/index.html "
 
 sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
-       listen 80;
+       listen 8080;
 
-       listen [::]:80;
+       listen [::]:8080;
 
        root /var/www/html/mywebsite-nginx;
 
