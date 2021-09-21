@@ -3,10 +3,10 @@
 sudo apt update -y  #Update all repo
 sudo apt install nginx -y #install Nginx -y with answer all question yes .
 sudo apt install curl -y
-sudo mkdir /var/www/html/mywebsite-nginx/   #make dirctory with hamedadeli-nginx
-sudo touch /var/www/html/mywebsite-nginx/index.html
+sudo mkdir /var/www/html/hamedadeli.me/   #make dirctory with hamedadeli-nginx
+sudo touch /var/www/html/hamedadeli.me/index.html
 
-sudo echo   >  /var/www/html/mywebsite-nginx/index.html "
+sudo echo   >  /var/www/html/hamedadeli.me/index.html "
 
 <html>
 
@@ -23,24 +23,19 @@ sudo echo   >  /var/www/html/mywebsite-nginx/index.html "
 </html>"
 
   # create  index.html 
- sudo touch /etc/nginx/sites-enabled/hamedadeli
+ sudo touch /etc/nginx/sites-available/hamedadeli.me
 
-sudo echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
+sudo echo  >  /etc/nginx/sites-available/hamedadeli.me "server {
 
-       listen 8080;
+       listen 80;
 
-       listen [::]:8080;
-
-
-
-       server_name hamedadeli.com;
-
-
+       listen [::]:80;
 
        root /var/www/html/mywebsite-nginx;
 
        index index.html;
 
+       server_name hamedadeli.com www.hamedadeli.me;
 
 
        location / {
@@ -51,8 +46,10 @@ sudo echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
 
 }"
 
+sudo ln -s /etc/nginx/sites-available/hamedadeli.com  /etc/nginx/sites-enabled/hamedadeli.com
 # create  config  for  static website 
 
-sudo systemctl restart nginx.service  # retart nginx
 sudo systemctl enable nginx.service   #enbale enginx 
+
+sudo systemctl restart nginx.service  # retart nginx
 curl  localhost:8080
