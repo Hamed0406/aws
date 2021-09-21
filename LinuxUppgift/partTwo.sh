@@ -26,7 +26,7 @@ echo -e  >index.html  /var/www/html/hamedadeli-nginx/ "
 
 sudo touch /etc/nginx/sites-enabled/hamedadeli
 
-echo -e  > "server {
+echo -e  >hamedadeli  /etc/nginx/sites-enabled/ "server {
 
        listen 8080;
 
