@@ -50,7 +50,7 @@ echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
 
        }
 
-}
+}"
 
 # create  config  for  static website 
 
