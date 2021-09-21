@@ -6,7 +6,7 @@ sudo apt install curl -y
 sudo mkdir /var/www/html/hamedadeli-nginx/   #make dirctory with hamedadeli-nginx
 sudo touch /var/www/html/hamedadeli-nginx/index.html
 
-echo -e  >index.html  "
+echo -e  >index.html  /var/www/html/hamedadeli-nginx/ "
 
 <html>
 
