@@ -4,9 +4,9 @@ sudo apt update -y  #Update all repo
 sudo apt install nginx -y #install Nginx -y with answer all question yes .
 sudo apt install curl -y
 sudo mkdir /var/www/html/mywebsite-nginx/   #make dirctory with hamedadeli-nginx
-touch /var/www/html/mywebsite-nginx/index.html
+sudo touch /var/www/html/mywebsite-nginx/index.html
 
-echo   >  /var/www/html/mywebsite-nginx/index.html "
+sudo echo   >  /var/www/html/mywebsite-nginx/index.html "
 
 <html>
 
@@ -23,9 +23,9 @@ echo   >  /var/www/html/mywebsite-nginx/index.html "
 </html>"
 
   # create  index.html 
- touch /etc/nginx/sites-enabled/hamedadeli
+ sudo touch /etc/nginx/sites-enabled/hamedadeli
 
-echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
+sudo echo  >  /etc/nginx/sites-enabled/hamedadeli "server {
 
        listen 8080;
 
