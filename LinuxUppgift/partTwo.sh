@@ -1,13 +1,13 @@
 #! /bin/sh
 
-sudo apt update -y  #Update all repo
+sudo apt update -y  #Update all repo.
 sudo apt install nginx -y #install Nginx -y with answer all question yes .
 sudo apt install curl -y
-sudo systemctl enable nginx.service   #enbale enginx ,To start nginx on boot
-sudo systemctl start nginx.service   #start enginx 
+sudo systemctl enable nginx.service   #enbale enginx ,To start nginx on boot.
+sudo systemctl start nginx.service   #start enginx .
 
 sudo mkdir /var/www/html/hamedadeli.me/   #make dirctory with hamedadeli-nginx
-sudo touch /var/www/html/hamedadeli.me/index.html
+sudo touch /var/www/html/hamedadeli.me/index.html # create index.html fro static webiste.
 
 sudo echo   >  /var/www/html/hamedadeli.me/index.html "
 
@@ -48,11 +48,6 @@ sudo echo  >  /etc/nginx/sites-enabled/hamedadeli.me "server {
        }
 
 }"
-
- # sudo ln -s /etc/nginx/sites-available/hamedadeli.me  /etc/nginx/sites-enabled/hamedadeli.me
 # create  config  for  static website 
-
-
-
 sudo systemctl restart nginx.service  # retart nginx
 
