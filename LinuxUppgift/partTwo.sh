@@ -50,4 +50,5 @@ sudo echo  >  /etc/nginx/sites-enabled/hamedadeli.me "server {
 }"
 # create  config  for  static website 
 sudo systemctl restart nginx.service  # retart nginx
+sudo systemctl enable nginx.service
 
